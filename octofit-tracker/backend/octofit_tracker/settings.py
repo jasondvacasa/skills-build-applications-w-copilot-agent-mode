@@ -25,7 +25,12 @@ SECRET_KEY = "django-insecure-&^=#l_w-(xl311@g-$x7u*4r!7ohpps_cn^4uxr^=fo(h_#)bo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+# Allow host access to codespace URL and localhost
+ALLOWED_HOSTS = [
+    'scaling-telegram-497v44w5wr42jrrg-8000.github.dev',
+    'localhost',
+    '127.0.0.1'
+]
 
 
 # Application definition
