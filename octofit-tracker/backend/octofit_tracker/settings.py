@@ -27,7 +27,7 @@ DEBUG = True
 
 # Allow host access to codespace URL and localhost
 ALLOWED_HOSTS = [
-    'scaling-telegram-497v44w5wr42jrrg-8000.github.dev',
+    'scaling-telegram-497v44w5wr42jrrg-8000.app.github.dev',
     'localhost',
     '127.0.0.1'
 ]
