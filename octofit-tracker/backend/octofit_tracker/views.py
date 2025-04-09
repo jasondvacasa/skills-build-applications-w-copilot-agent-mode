@@ -6,7 +6,7 @@ from .models import User, Team, Activity, Leaderboard, Workout
 
 @api_view(['GET'])
 def api_root(request, format=None):
-    base_url = 'https://scaling-telegram-497v44w5wr42jrrg-8000.app.github.dev/'
+    base_url = 'http://127.0.0.1:8000/'  # Updated to local backend URL
     return Response({
         'users': base_url + 'api/users/',
         'teams': base_url + 'api/teams/',
