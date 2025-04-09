@@ -4,9 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Leaderboard = () => {
   const [leaders, setLeaders] = useState([]);
 
-  // Updated API URL to use local backend
+  // Updated API URL to use codespace-specific domain
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/api/leaderboard')
+    fetch('https://scaling-telegram-497v44w5wr42jrrg-8000.app.github.dev/api/leaderboard')
       .then(response => response.json())
       .then(data => setLeaders(data))
       .catch(error => console.error('Error fetching leaderboard:', error));

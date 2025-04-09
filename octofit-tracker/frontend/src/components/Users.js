@@ -6,7 +6,7 @@ const Users = () => {
 
   // Updated API URL to use local backend
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/api/users')
+    fetch('https://scaling-telegram-497v44w5wr42jrrg-8000.app.github.dev/api/users')
       .then(response => response.json())
       .then(data => setUsers(data))
       .catch(error => console.error('Error fetching users:', error));

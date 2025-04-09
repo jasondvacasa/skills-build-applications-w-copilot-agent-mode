@@ -6,7 +6,7 @@ const Teams = () => {
 
   // Updated API URL to use local backend
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/api/teams')
+    fetch('https://scaling-telegram-497v44w5wr42jrrg-8000.app.github.dev/api/teams')
       .then(response => response.json())
       .then(data => setTeams(data))
       .catch(error => console.error('Error fetching teams:', error));

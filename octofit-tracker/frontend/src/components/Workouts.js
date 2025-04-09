@@ -6,7 +6,7 @@ const Workouts = () => {
 
   // Updated API URL to use local backend
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/api/workouts')
+    fetch('https://scaling-telegram-497v44w5wr42jrrg-8000.app.github.dev/api/workouts')
       .then(response => response.json())
       .then(data => setWorkouts(data))
       .catch(error => console.error('Error fetching workouts:', error));

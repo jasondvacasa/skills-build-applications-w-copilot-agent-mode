@@ -40,6 +40,7 @@ const App = () => {
       </nav>
       <div className="container mt-4">
         <Routes>
+          <Route path="/" element={<Activities />} />
           <Route path="/activities" element={<Activities />} />
           <Route path="/leaderboard" element={<Leaderboard />} />
           <Route path="/teams" element={<Teams />} />

@@ -5,7 +5,7 @@ const Activities = () => {
   const [activities, setActivities] = useState([]);
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/api/activities')
+    fetch('https://scaling-telegram-497v44w5wr42jrrg-8000.app.github.dev/api/activities')
       .then(response => response.json())
       .then(data => setActivities(data))
       .catch(error => console.error('Error fetching activities:', error));
